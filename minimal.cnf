@@ -12,7 +12,6 @@ thread_stack=128K
 
 #largest impact (50% memory)
 performance_schema=0
-show_compatibility_56=1
 
 #innodb_file_per_table=1
 #innodb_buffer_pool_size=5M
