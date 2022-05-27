@@ -36,4 +36,5 @@ table_open_cache=64
 #binlog_stmt_cache_size=4K
 
 #largest impact (50% memory)
-performance_schema=off
+performance_schema=0
+show_compatibility_56=1
