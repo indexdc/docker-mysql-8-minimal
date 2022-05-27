@@ -7,9 +7,7 @@ innodb_parallel_read_threads=4
 performance_schema_max_table_instances=150
 table_definition_cache=150
 table_open_cache=64
-key_buffer=8M 
-query_cache_size=8M # try 4m if not enough 
-query_cache_limit=512K
+key_buffer_size=8M 
 thread_stack=128K
 
 #largest impact (50% memory)
