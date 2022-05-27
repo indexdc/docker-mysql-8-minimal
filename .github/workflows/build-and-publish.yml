@@ -24,7 +24,7 @@ jobs:
         run: | 
             docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: Build the Docker Image
-        run: docker build . --file Dockerfile --tag chamodshehanka/node-test:$(date +%s)
+        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKERHUB_USERNAME }}/docker-mysql-8-minimal:$(date +%s)
         
       - name: Docker Push
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/docker-mysql-8-minimal
